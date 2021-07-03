@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="test">
+<!--SuiteConfig在整个suite标签中都是生效的，比如在suite文件中，
+suite测试套件包裹也在 pay 的test文件中执行-->
+    <test name="login">
+        <classes>
+            <class name="com.course.testng.suite.SuiteConfig"/>
+            <class name="com.course.testng.suite.LoginTest"/>
+        </classes>
+    </test>
+    <test name="pay">
+        <classes>
+            <class name="com.course.testng.suite.SuiteConfig"/>
+            <class name="com.course.testng.suite.PayTest"/>
+        </classes>
+    </test>
+</suite>

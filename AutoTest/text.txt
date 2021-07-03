@@ -1,0 +1,11 @@
+111111
+
+22222
+
+合并分支操作
+
+
+这是master上的内容=这是mergedemo上面更改的内容
+
+version1
+version2
