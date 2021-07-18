@@ -1,0 +1,24 @@
+server:
+  port: 8888
+
+logging:
+  path: logs
+  file: mylog.log
+
+spring:
+  application:
+    name: myTest
+#   实际上上面是测试Interface接口的，
+#   但是myIntegerface容易跟程序自带的接口产生混淆，故写成myTest
+#   本机IP地址：172.26.115.145， 数据库上显示的IP地址是：127.0.0.1
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/course
+    username: root
+    password: admin
+
+mybatis:
+  type-aliases-package: com.course.model
+#  - mapper/* 中的mapper是为了加在所有mapper文件下的xml文件
+  mapper-locations:
+    - mapper/*
